@@ -57,7 +57,7 @@
               <li>
                 <a href="#">Introduction</a>
               </li>
-              <li id="mydiv">
+              <li>
                 <a class="hide-mobile" href="#"
                   >Products<span class="arrow">&#x25bc;</span></a
                 >
@@ -65,15 +65,14 @@
                   Products<span class="arrow">&#x25bc;</span></label
                 >
                 <input id="submenu" type="checkbox" />
-                <div id="target">
-                  <ul class="submenu-1">
-                    <li><a href="#">Communication + outsource staff</a></li>
-                    <li><a href="#">Advanced appointments</a></li>
-                    <li><a href="#">Innovative billing</a></li>
-                    <li><a href="#">Patient out of pocket expenses</a></li>
-                    <li><a href="#">Outsourced services</a></li>
-                  </ul>
-                </div>
+                
+                <ul class="submenu-1">
+                  <li><a href="#">Communication + outsource staff</a></li>
+                  <li><a href="#">Advanced appointments</a></li>
+                  <li><a href="#">Innovative billing</a></li>
+                  <li><a href="#">Patient out of pocket expenses</a></li>
+                  <li><a href="#">Outsourced services</a></li>
+                </ul>
               </li>
               <li><a href="#"> Introductory promotion </a></li>
               <li>
@@ -88,6 +87,7 @@
               <li>
                 <a href="#">Partner with us</a>
               </li>
+
               <li><a href="#">Practice managers</a></li>
               <li><a href="#">Search for providers</a></li>
               <li><a href="#">Contact</a></li>
@@ -1314,15 +1314,6 @@ Click the Install icon on our website to install on their device Home screen. Us
       </div>
     </main>
     <script type="text/javascript">
-      const targetDiv = document.getElementById("target");
-      const btn = document.getElementById("mydiv");
-      btn.onclick = function () {
-        if (targetDiv.style.display !== "none") {
-          targetDiv.style.display = "none";
-        } else {
-          targetDiv.style.display = "block";
-        }
-      };
       AOS.init();
     </script>
   </body>
