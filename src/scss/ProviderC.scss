@@ -1,0 +1,2449 @@
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+@import "utils";
+
+$font_type0: 18px/2.05 "SF Pro Display", Helvetica, Arial, serif;
+$font_type1: 18px/1.11 "SF Pro Display", Helvetica, Arial, serif;
+$font_type2: 56px/1.4 "SF Pro Display", Helvetica, Arial, serif;
+$font_type3: 36px/1.45 "SF Pro Display", Helvetica, Arial, serif;
+$font_type4: 40px/1.5 "SF Pro Display", Helvetica, Arial, serif;
+$font_type5: 28px/1.55 "SF Pro Display", Helvetica, Arial, serif;
+$font_type6: 36px/1.7 "SF Pro Display", Helvetica, Arial, serif;
+$font_type7: 31px/1.1 "SF Pro Display", Helvetica, Arial, serif;
+$font_type8: 21px/1.2 "SF Pro Display", Helvetica, Arial, serif;
+$font_type9: 21px/1.4 "SF Pro Display", Helvetica, Arial, serif;
+$font_type10: 28px/1.4 "SF Pro Display", Helvetica, Arial, serif;
+$font_type11: 24px/1.39 "SF Pro Display", Helvetica, Arial, serif;
+$font_type12: 28px/1.1 "SF Pro Display", Helvetica, Arial, serif;
+$font_type13: 28px/1.5 "SF Pro Display", Helvetica, Arial, serif;
+$font_type14: 28px/1.5 Arial, Helvetica, Arial, serif;
+$font_type15: 36px/1.49 "SF Pro", Helvetica, Arial, serif;
+$font_type16: 28px/1.3 "SF Pro Display", Helvetica, Arial, serif;
+
+.provider-c- {
+  &main {
+    @include flex-column;
+    background-color: rgb(255, 255, 255);
+  }
+  &main.layout {
+    position: relative;
+    overflow: hidden;
+  }
+  &main-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 44px;
+  }
+  &content-box {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.643);
+    width: 100%;
+    height: 100%;
+  }
+  &content-box-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 210px;
+  }
+  &icon {
+    background: var(--src) center center / contain no-repeat;
+  }
+  &icon.layout {
+    position: relative;
+    height: 44px;
+    width: 44px;
+    min-width: 44px;
+    margin: 0px 0px 0px 166px;
+    @include lg {
+      margin: 0px 0px 0px 132px;
+    }
+    @include md {
+      margin: 0px 0px 0px 96px;
+    }
+    @include sm {
+      margin: 0px 0px 0px 65px;
+    }
+    @include xs {
+      margin: 0px 0px 0px 50px;
+    }
+    @include xxs {
+      margin: 0px 0px 0px 34px;
+    }
+    @include tn {
+      margin: 0px 0px 0px 24px;
+    }
+  }
+  &content-box-spacer {
+    flex: 0 1 56px;
+  }
+  &highlights1 {
+    @include h-center-content;
+    font: $font_type0;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include lg {
+      font-size: 17px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: 15px;
+    }
+    @include xxs {
+      font-size: 14px;
+    }
+  }
+  &highlights1.layout {
+    position: relative;
+    flex: 0 0 auto;
+    height: min-content;
+    margin: 3px 0px 4px;
+    @include lg {
+      margin: 5px 0px;
+    }
+  }
+  &content-box-spacer1 {
+    flex: 0 1 61px;
+  }
+  &highlights11 {
+    @include h-center-content;
+    font: $font_type1;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include lg {
+      font-size: 17px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: 15px;
+    }
+    @include xxs {
+      font-size: 14px;
+    }
+  }
+  &highlights11.layout {
+    position: relative;
+    flex: 0 0 auto;
+    height: min-content;
+    margin: 13px 0px 11px;
+    @include lg {
+      margin: 11px 0px 10px;
+    }
+    @include md {
+      margin: 10px 0px 8px;
+    }
+    @include sm {
+      margin: 8px 0px 7px;
+    }
+    @include xs {
+      margin: 7px 0px 6px;
+    }
+    @include tn {
+      margin: 6px 0px 5px;
+    }
+  }
+  &content-box-spacer2 {
+    flex: 0 1 54px;
+  }
+  &highlights12 {
+    @include h-center-content;
+    font: $font_type1;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include lg {
+      font-size: 17px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: 15px;
+    }
+    @include xxs {
+      font-size: 14px;
+    }
+  }
+  &highlights12.layout {
+    position: relative;
+    flex: 0 0 auto;
+    height: min-content;
+    margin: 13px 0px 11px;
+    @include lg {
+      margin: 11px 0px 10px;
+    }
+    @include md {
+      margin: 10px 0px 8px;
+    }
+    @include sm {
+      margin: 8px 0px 7px;
+    }
+    @include xs {
+      margin: 7px 0px 6px;
+    }
+    @include tn {
+      margin: 6px 0px 5px;
+    }
+  }
+  &content-box-spacer3 {
+    flex: 0 1 42px;
+  }
+  &highlights13 {
+    @include h-center-content;
+    font: $font_type1;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include lg {
+      font-size: 17px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: 15px;
+    }
+    @include xxs {
+      font-size: 14px;
+    }
+  }
+  &highlights13.layout {
+    position: relative;
+    flex: 0 0 auto;
+    height: min-content;
+    margin: 13px 0px 11px;
+    @include lg {
+      margin: 11px 0px 10px;
+    }
+    @include md {
+      margin: 10px 0px 8px;
+    }
+    @include sm {
+      margin: 8px 0px 7px;
+    }
+    @include xs {
+      margin: 7px 0px 6px;
+    }
+    @include tn {
+      margin: 6px 0px 5px;
+    }
+  }
+  &content-box-spacer4 {
+    flex: 0 1 45.5px;
+  }
+  &highlights14 {
+    @include h-center-content;
+    font: $font_type1;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include lg {
+      font-size: 17px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: 15px;
+    }
+    @include xxs {
+      font-size: 14px;
+    }
+  }
+  &highlights14.layout {
+    position: relative;
+    flex: 0 0 auto;
+    height: min-content;
+    margin: 13px 0px 11px;
+    @include lg {
+      margin: 11px 0px 10px;
+    }
+    @include md {
+      margin: 10px 0px 8px;
+    }
+    @include sm {
+      margin: 8px 0px 7px;
+    }
+    @include xs {
+      margin: 7px 0px 6px;
+    }
+    @include tn {
+      margin: 6px 0px 5px;
+    }
+  }
+  &content-box-spacer5 {
+    flex: 0 1 44px;
+  }
+  &highlights2 {
+    @include h-center-content;
+    font: $font_type1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include lg {
+      font-size: 17px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: 15px;
+    }
+    @include xxs {
+      font-size: 14px;
+    }
+  }
+  &highlights2.layout {
+    position: relative;
+    flex: 0 0 auto;
+    height: min-content;
+    margin: 12px 0px;
+    @include lg {
+      margin: 11px 0px;
+    }
+    @include md {
+      margin: 9px 0px;
+    }
+    @include sm {
+      margin: 8px 0px;
+    }
+    @include xs {
+      margin: 7px 0px;
+    }
+    @include xxs {
+      margin: 6px 0px;
+    }
+  }
+  &content-box-spacer6 {
+    flex: 0 1 47.5px;
+  }
+  &highlights21 {
+    @include h-center-content;
+    font: $font_type0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include lg {
+      font-size: 17px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+      font-size: 15px;
+    }
+    @include xxs {
+      font-size: 14px;
+    }
+  }
+  &highlights21.layout {
+    position: relative;
+    flex: 0 0 auto;
+    height: min-content;
+    margin: 3px 0px 4px;
+    @include lg {
+      margin: 5px 0px;
+    }
+  }
+  &content-box-spacer7 {
+    flex: 0 1 52.5px;
+  }
+  &highlights1.layout1 {
+    position: relative;
+    flex: 0 0 auto;
+    height: min-content;
+    margin: 3px 161.5px 4px 0px;
+    @include lg {
+      margin: 5px 129px 5px 0px;
+    }
+    @include md {
+      margin: 5px 94px 5px 0px;
+    }
+    @include sm {
+      margin: 5px 64px 5px 0px;
+    }
+    @include xs {
+      margin: 5px 49px 5px 0px;
+    }
+    @include xxs {
+      margin: 5px 34px 5px 0px;
+    }
+    @include tn {
+      margin: 5px 24px 5px 0px;
+    }
+  }
+  &main-item1 {
+    @include flex-column;
+    position: relative;
+  }
+  &group {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &flex14 {
+    @include flex-column;
+    background-color: rgb(207, 211, 218);
+  }
+  &flex14.layout {
+    position: relative;
+    height: min-content;
+  }
+  &hero-title6-box {
+    @include h-center-content;
+    @include xxl {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include lg {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include tn {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &hero-title6-box.layout {
+    position: relative;
+    height: min-content;
+    margin: 117px 0px 0px;
+    @include lg {
+      margin: 103px 0px 0px;
+    }
+    @include sm {
+      margin: 74px 0px 0px;
+    }
+  }
+  &hero-title6 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type2;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    white-space: pre-wrap;
+    @include xxl {
+      font-size: 52px;
+      text-align: center;
+    }
+    @include lg {
+      font-size: 45px;
+    }
+    @include sm {
+      font-size: 32px;
+    }
+    @include tn {
+      font-size: 27px;
+    }
+  }
+  &flex13 {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &hero-title5 {
+    @include h-center-content;
+    font: $font_type3;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    width: 100%;
+    height: 100%;
+    @include xl {
+      font-size: 34px;
+      text-align: center;
+    }
+    @include lg {
+      font-size: 30px;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+  &hero-title51 {
+    @include h-center-content;
+    font: $font_type3;
+    color: rgb(29, 29, 31);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    width: 100%;
+    height: 100%;
+    @include xl {
+      font-size: 34px;
+      text-align: center;
+    }
+    @include lg {
+      justify-content: flex-start;
+      font-size: 30px;
+      text-align: left;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+  &flex13-item {
+    @include flex-column;
+    position: relative;
+  }
+  &image9 {
+    background: var(--src) center center / contain no-repeat;
+  }
+  &image9.layout {
+    position: absolute;
+    top: -46px;
+    height: 64px;
+    left: 8px;
+    width: 180px;
+    @include max {
+      top: -40px;
+      left: -8px;
+    }
+    @include xl {
+      left: 8px;
+    }
+    @include lg {
+      left: -50px;
+    }
+    @include sm {
+      top: -36px;
+      height: 42px;
+      left: -44px;
+      width: 148px;
+    }
+    @include tn {
+      left: -19px;
+    }
+  }
+  &hero-title52-box {
+    @include h-center-content;
+    width: 100%;
+    height: 100%;
+    @include xl {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include lg {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &hero-title52 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type3;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    white-space: pre-wrap;
+    @include xl {
+      font-size: 34px;
+      text-align: center;
+    }
+    @include lg {
+      font-size: 30px;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+  &hero-title53-box {
+    @include h-center-content;
+    width: 100%;
+    height: 100%;
+    @include xl {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include lg {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &hero-title53 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type3;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    white-space: pre-wrap;
+    @include xl {
+      font-size: 34px;
+      text-align: center;
+    }
+    @include lg {
+      font-size: 30px;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+  &hero-title54-box {
+    @include h-center-content;
+    width: 100%;
+    height: 100%;
+    @include xl {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include lg {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    @include sm {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    @include tn {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+  &hero-title54 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type3;
+    color: rgb(29, 29, 31);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    white-space: pre-wrap;
+    @include xl {
+      font-size: 34px;
+      text-align: center;
+    }
+    @include lg {
+      font-size: 30px;
+      text-align: left;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+  &hero-title4 {
+    @include h-center-content;
+    font: $font_type3;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include max {
+      font-size: 20px;
+      text-align: center;
+    }
+    @include lg {
+      justify-content: flex-start;
+      text-align: left;
+    }
+    @include sm {
+      justify-content: center;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  &hero-title4.layout {
+    position: relative;
+    height: min-content;
+  }
+  &flex13-item1 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 53px;
+  }
+  &hero-title41-box {
+    @include h-center-content;
+    @include max {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include lg {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include tn {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &hero-title41-box.layout {
+    position: relative;
+    height: min-content;
+  }
+  &hero-title41 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type3;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    white-space: pre-wrap;
+    @include max {
+      font-size: 20px;
+      text-align: center;
+    }
+    @include lg {
+      text-align: left;
+    }
+    @include sm {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  &flex13-item2 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 966px;
+    @include max {
+      display: none;
+    }
+    @include sm {
+      flex: 0 1 auto;
+      display: flex;
+    }
+  }
+  &image10 {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    object-fit: contain;
+    object-position: center top;
+  }
+  &image101 {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    object-fit: contain;
+    object-position: center top;
+    @include xxl {
+      object-position: 100px;
+    }
+    @include xl {
+      object-position: 150px;
+    }
+  }
+  &main-item2 {
+    @include flex-column;
+    position: relative;
+  }
+  &section2__section2 {
+    @include flex-column;
+  }
+  &section2__section2.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.9%;
+      margin: 0px auto;
+    }
+  }
+  &section2__flex2 {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section2__hero-title1 {
+    @include h-center-content;
+    font: $font_type4;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    width: 100%;
+    height: 100%;
+    @include sm {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+  &section2__block {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section2__big-title {
+    @include h-center-content;
+    font: $font_type5;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include sm {
+      justify-content: flex-start;
+      font-size: 21px;
+      text-align: left;
+    }
+  }
+  &section2__big-title.layout {
+    position: relative;
+    height: min-content;
+    @include sm {
+      margin: 0px;
+    }
+  }
+  &section2__big-title1 {
+    @include h-center-content;
+    font: $font_type5;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    width: 100%;
+    height: 100%;
+    @include sm {
+      justify-content: flex-start;
+      font-size: 21px;
+      text-align: left;
+    }
+  }
+  &section2__big-title2 {
+    @include h-center-content;
+    font: $font_type5;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    width: 100%;
+    height: 100%;
+    @include sm {
+      justify-content: flex-start;
+      font-size: 21px;
+      text-align: left;
+    }
+  }
+  &section2__block-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 44px;
+  }
+  &section2__big-title3 {
+    @include h-center-content;
+    font: $font_type5;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    width: 100%;
+    height: 100%;
+    @include sm {
+      justify-content: flex-start;
+      font-size: 21px;
+      text-align: left;
+    }
+  }
+  &section2__image7 {
+    background: var(--src) center center / contain no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  &section2__image8 {
+    background: var(--src) center center / cover no-repeat;
+    @include lg {
+      right: -80px;
+      position: absolute;
+    }
+    @include md {
+      right: -80px;
+    }
+    @include sm {
+      right: 0px;
+    }
+  }
+  &section2__image8.layout {
+    position: absolute;
+    top: 146px;
+    height: 221px;
+    width: 310px;
+    min-width: 310px;
+    right: 368px;
+    @include max {
+      top: 136px;
+    }
+    @include xxl {
+      right: 80px;
+    }
+    @include xl {
+      right: 20px;
+    }
+    @include lg {
+      top: 71px;
+      width: 276px;
+      min-width: 276px;
+      right: 0px;
+    }
+    @include md {
+      top: 10px;
+    }
+    @include sm {
+      top: 27px;
+      height: 76px;
+      width: 106px;
+      min-width: 106px;
+    }
+  }
+  &section2__image6 {
+    background: var(--src) center center / contain no-repeat;
+  }
+  &section2__image6.layout {
+    position: absolute;
+    height: 475px;
+    bottom: -7px;
+    width: 410px;
+    right: 0px;
+    @include max {
+      bottom: 0px;
+    }
+    @include lg {
+      height: 316px;
+      bottom: 50px;
+      width: 282px;
+    }
+    @include sm {
+      height: 166px;
+      bottom: 265px;
+      width: 123px;
+    }
+  }
+  &main-item3 {
+    @include flex-column;
+    position: relative;
+  }
+  &section3__section3 {
+    @include flex-column;
+    background-color: rgb(0, 0, 0);
+  }
+  &section3__section3.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.9%;
+      margin: 0px auto;
+    }
+  }
+  &section3__block1 {
+    @include flex-column;
+  }
+  &section3__block1.layout {
+    position: relative;
+    height: min-content;
+    margin: 116px 0px 0px;
+    @include lg {
+      margin: 105px 0px 0px;
+    }
+    @include sm {
+      margin: 113px 10px 0px;
+    }
+  }
+  &section3__hero-title3-box {
+    @include h-center-content;
+    width: 100%;
+    height: 100%;
+    @include lg {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &section3__hero-title3 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type4;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    white-space: pre-wrap;
+    @include lg {
+      text-align: center;
+    }
+    @include sm {
+      font-size: 36px;
+    }
+  }
+  &section3__hero-title2-box {
+    @include h-center-content;
+    width: 100%;
+    height: 100%;
+    @include lg {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &section3__hero-title2 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type6;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    white-space: pre-wrap;
+    @include lg {
+      text-align: center;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+  &section3__block1-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 635px;
+  }
+  &section3__flex14 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    @include sm {
+      flex-wrap: wrap;
+      row-gap: 16px;
+    }
+  }
+  &section3__flex14-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 0 auto;
+    @include sm {
+      flex: 0 0 100%;
+    }
+  }
+  &section3__group {
+    @include flex-column;
+  }
+  &section3__group.layout {
+    position: relative;
+    height: min-content;
+    margin: 0px 0px 256px;
+    @include max {
+      margin: 0px;
+    }
+  }
+  &section3__flex13 {
+    @include flex-column;
+    background-color: rgb(29, 29, 31);
+    width: 100%;
+    height: 100%;
+  }
+  &section3__big-title2 {
+    @include h-center-content;
+    font: $font_type7;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include max {
+      font-size: 28px;
+      text-align: center;
+    }
+    @include lg {
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  &section3__big-title2.layout {
+    position: relative;
+    height: min-content;
+    width: 56.39%;
+    max-width: 305px;
+    margin: 0px 36.89% 0px 6.72%;
+    @include max {
+      width: 98.85%;
+      max-width: 277px;
+      margin: 76px auto 0px;
+    }
+    @include lg {
+      max-width: 266px;
+    }
+  }
+  &section3__block5 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  &section3__medium-title1 {
+    @include font-face($font_type8, rgb(250, 250, 250), 0.23100000619888306px);
+    @include sm {
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+  &section3__medium-title1.layout {
+    position: relative;
+    height: min-content;
+    width: 20px;
+    min-width: 20px;
+  }
+  &section3__block5-item {
+    @include flex-column;
+    position: relative;
+  }
+  &section3__medium-title11 {
+    @include font-face($font_type9, rgb(250, 250, 250), 0.23100000619888306px);
+    width: 100%;
+    height: 100%;
+    @include max {
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+  &section3__block51 {
+    display: flex;
+  }
+  &section3__block51.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 305px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.35%;
+      margin: 29px auto 0px;
+    }
+    @include lg {
+      max-width: 286px;
+    }
+    @include sm {
+      margin: 40px auto 0px;
+    }
+  }
+  &section3__medium-title12 {
+    @include font-face($font_type9, rgb(250, 250, 250), 0.23100000619888306px);
+    width: 100%;
+    height: 100%;
+    @include max {
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+  &section3__block52 {
+    display: flex;
+  }
+  &section3__block52.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 305px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.35%;
+      margin: 29px auto 57px;
+    }
+    @include lg {
+      max-width: 287px;
+      margin: 29px auto 86px;
+    }
+    @include sm {
+      margin: 40px auto 76px;
+    }
+  }
+  &section3__medium-title13 {
+    @include font-face($font_type9, rgb(250, 250, 250), 0.23100000619888306px);
+    width: 100%;
+    height: 100%;
+    @include max {
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+  &section3__image5 {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    object-fit: contain;
+    object-position: center top;
+    @include max {
+      object-position: -10px;
+    }
+  }
+  &section3__image5.layout {
+    position: absolute;
+    top: 287px;
+    left: 0px;
+    width: 148px;
+    @include max {
+      top: 0px;
+      display: none;
+    }
+    @include sm {
+      top: -64px;
+      display: flex;
+    }
+  }
+  &section3__flex14-spacer {
+    @include lg {
+      flex: 0 0 22px;
+    }
+    @include sm {
+      display: none;
+    }
+  }
+  &section3__flex14-item1 {
+    @include flex-column;
+    position: relative;
+    @include sm {
+      flex: 0 0 100%;
+    }
+  }
+  &section3__flex12 {
+    @include flex-column;
+  }
+  &section3__flex12.layout {
+    position: relative;
+    flex-grow: 1;
+    min-height: 118px;
+    flex-shrink: 0;
+    @include lg {
+      margin: 0px 1px;
+    }
+    @include sm {
+      margin: 10px 1px 0px;
+    }
+    @include xxs {
+      margin: 10px 9px 0px;
+    }
+  }
+  &section3__flex12-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  &section3__flex131 {
+    @include flex-column;
+    background-color: rgb(29, 29, 31);
+    width: 100%;
+    height: 100%;
+    @include xxl {
+      padding-left: 15px;
+    }
+  }
+  &section3__flex13-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 379px;
+  }
+  &section3__group1 {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section3__flex132 {
+    @include flex-column;
+    background-color: rgb(29, 29, 31);
+    width: 100%;
+    height: 100%;
+    @include xxl {
+      padding-left: 15px;
+    }
+  }
+  &section3__big-title21 {
+    @include h-center-content;
+    font: $font_type10;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.1120000034570694px;
+    @include max {
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  &section3__big-title21.layout {
+    position: relative;
+    height: min-content;
+    width: 56.39%;
+    max-width: 668px;
+    margin: 0px 36.89% 0px 6.72%;
+    @include max {
+      width: 98.85%;
+      max-width: 686px;
+      margin: 58px auto 0px;
+    }
+    @include lg {
+      max-width: 504px;
+      margin: 45px auto 0px;
+    }
+    @include sm {
+      margin: 76px auto 0px;
+    }
+  }
+  &section3__block53 {
+    display: flex;
+  }
+  &section3__block53.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 690px;
+    margin: 29px 0px 0px;
+    @include max {
+      width: 99.35%;
+      margin: 29px auto 0px;
+    }
+    @include lg {
+      max-width: 504px;
+    }
+  }
+  &section3__medium-title14 {
+    @include font-face($font_type11, rgb(250, 250, 250), 0.23100000619888306px);
+    @include sm {
+      text-align: left;
+    }
+  }
+  &section3__medium-title14.layout {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0px;
+    max-width: 1000px;
+    @include lg {
+      margin: 0px;
+    }
+  }
+  &section3__block54 {
+    display: flex;
+  }
+  &section3__block54.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 690px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.35%;
+      margin: 30px auto 0px;
+    }
+    @include lg {
+      max-width: 504px;
+      margin: 40px auto 0px;
+    }
+  }
+  &section3__block5-item1 {
+    @include flex-column;
+    position: relative;
+    flex: 1 1 auto;
+  }
+  &section3__medium-title15 {
+    @include font-face($font_type11, rgb(250, 250, 250), 0.23100000619888306px);
+    width: 100%;
+    height: 100%;
+    @include sm {
+      text-align: left;
+    }
+  }
+  &section3__block55 {
+    display: flex;
+  }
+  &section3__block55.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 690px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.35%;
+      margin: 30px auto 0px;
+    }
+    @include lg {
+      max-width: 504px;
+      margin: 40px auto 0px;
+    }
+  }
+  &section3__medium-title1.layout1 {
+    position: relative;
+    height: min-content;
+    width: 20px;
+    min-width: 20px;
+    @include max {
+      margin: 3px 0px 0px;
+    }
+  }
+  &section3__block5-item2 {
+    @include flex-column;
+    position: relative;
+    flex: 1 1 auto;
+  }
+  &section3__medium-title16 {
+    @include font-face($font_type11, rgb(250, 250, 250), 0.23100000619888306px);
+    width: 100%;
+    height: 100%;
+    @include sm {
+      text-align: left;
+    }
+  }
+  &section3__block56 {
+    display: flex;
+  }
+  &section3__block56.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 690px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.35%;
+      margin: 30px auto 50px;
+    }
+    @include lg {
+      max-width: 504px;
+      margin: 40px auto 29px;
+    }
+    @include sm {
+      margin: 40px auto 76px;
+    }
+  }
+  &section3__medium-title1.layout2 {
+    position: relative;
+    height: min-content;
+    width: 20px;
+    min-width: 20px;
+    @include max {
+      margin: 3px 0px 0px;
+    }
+  }
+  &section3__medium-title17 {
+    @include font-face($font_type11, rgb(250, 250, 250), 0.23100000619888306px);
+    width: 100%;
+    height: 100%;
+    @include sm {
+      text-align: left;
+    }
+  }
+  &section3__image5.layout1 {
+    position: absolute;
+    top: 0px;
+    width: 148px;
+    right: -382px;
+    @include max {
+      right: 0px;
+      display: none;
+    }
+    @include sm {
+      top: -55px;
+      right: -10px;
+      display: flex;
+    }
+  }
+  &section3__flex12-spacer {
+    flex: 0 0 auto;
+    @include xxxl {
+      min-height: unset;
+    }
+  }
+  &section3__flex133 {
+    @include flex-column;
+    background-color: rgb(29, 29, 31);
+    width: 100%;
+    height: 100%;
+    @include xxl {
+      padding-left: 15px;
+    }
+  }
+  &section3__flex13-item1 {
+    @include flex-column;
+    position: relative;
+  }
+  &section3__group.layout1 {
+    position: relative;
+    height: min-content;
+  }
+  &section3__flex134 {
+    @include flex-column;
+    background-color: rgb(29, 29, 31);
+    width: 100%;
+    height: 100%;
+    @include xxl {
+      padding-left: 15px;
+    }
+  }
+  &section3__big-title22 {
+    display: flex;
+    @include font-face($font_type12, rgb(245, 245, 247), 0.1120000034570694px);
+    @include lg {
+      justify-content: center;
+      text-align: center;
+    }
+    @include sm {
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  &section3__big-title22.layout {
+    position: relative;
+    height: min-content;
+    width: 98.85%;
+    max-width: 700px;
+    margin: 0px auto;
+    @include max {
+      margin: 49px auto 0px;
+    }
+    @include lg {
+      max-width: 479px;
+      margin: 76px auto 0px;
+    }
+    @include md {
+      margin: 20px auto 0px;
+    }
+    @include sm {
+      margin: 76px auto 0px;
+    }
+  }
+  &section3__block57 {
+    display: flex;
+  }
+  &section3__block57.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 700px;
+    margin: 29px 0px 0px;
+    @include max {
+      width: 99.35%;
+      margin: 29px auto 45px;
+    }
+    @include lg {
+      max-width: 497px;
+    }
+    @include sm {
+      margin: 39px auto 60px;
+    }
+  }
+  &section3__block5-item3 {
+    @include flex-column;
+    position: relative;
+    flex: 1 1 auto;
+  }
+  &section3__medium-title18 {
+    @include font-face($font_type11, rgb(250, 250, 250), 0.23100000619888306px);
+    width: 100%;
+    height: 100%;
+    @include sm {
+      text-align: left;
+    }
+  }
+  &section3__image5.layout2 {
+    position: absolute;
+    top: 287px;
+    left: 0px;
+    width: 148px;
+    @include max {
+      top: 0px;
+      display: none;
+    }
+    @include sm {
+      top: -57px;
+      left: -12px;
+      display: flex;
+    }
+  }
+  &section3__block1-item1 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 180px;
+  }
+  &section3__block12 {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section3__hero-title21 {
+    @include h-center-content;
+    font: $font_type6;
+    color: rgb(245, 245, 247);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    width: 100%;
+    height: 100%;
+    @include md {
+      font-size: 26px;
+      text-align: center;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+  &section3__image5.layout3 {
+    position: absolute;
+    top: 0px;
+    width: 148px;
+    right: 272px;
+    @include max {
+      right: 0px;
+      display: none;
+    }
+    @include sm {
+      top: -118px;
+      right: -5px;
+      display: flex;
+    }
+  }
+  &main-item4 {
+    @include flex-column;
+    position: relative;
+  }
+  &section4__section4 {
+    @include flex-column;
+  }
+  &section4__section4.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.9%;
+      margin: 0px auto;
+    }
+  }
+  &section4__cover-block5 {
+    display: flex;
+    background-color: rgb(214, 196, 194);
+    width: 100%;
+    height: 100%;
+  }
+  &section4__cover-block5-item {
+    @include flex-column;
+    position: relative;
+    flex: 1 1 1920px;
+  }
+  &section4__group {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section4__flex5 {
+    @include flex-column;
+  }
+  &section4__flex5.layout {
+    position: relative;
+    height: min-content;
+    @include xxl {
+      margin: 0px;
+    }
+  }
+  &section4__hero-title1-box {
+    @include h-center-content;
+    width: 100%;
+    height: 100%;
+    @include lg {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include md {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include xs {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include xxs {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include tn {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &section4__hero-title1 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type4;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    letter-spacing: 0.2800000011920929px;
+    white-space: pre-wrap;
+    @include lg {
+      font-size: 36px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 32px;
+    }
+    @include sm {
+      font-size: 36px;
+    }
+    @include xs {
+      font-size: 26px;
+    }
+    @include xxs {
+      font-size: 24px;
+    }
+    @include tn {
+      font-size: 23px;
+    }
+  }
+  &section4__flex6 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    @include sm {
+      flex-wrap: wrap;
+      row-gap: 16px;
+    }
+  }
+  &section4__flex6-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 0 37px;
+    @include lg {
+      flex: 0 1 37px;
+      display: none;
+    }
+    @include sm {
+      flex: 0 0 100%;
+    }
+  }
+  &section4__flex7 {
+    @include flex-column;
+  }
+  &section4__flex7.layout {
+    position: relative;
+    height: min-content;
+    width: 37px;
+    min-width: 37px;
+    margin: 75px 0px 185px 0px;
+    @include xxxl {
+      margin: 75px 45px 185px 0px;
+      display: flex;
+    }
+    @include xxl {
+      margin: 75px 15px 185px 0px;
+    }
+    @include lg {
+      margin: 64px 15px 147px 0px;
+      display: none;
+    }
+    @include md {
+      margin: 52px 15px 105px 0px;
+    }
+    @include sm {
+      margin: 42px 15px 70px 0px;
+    }
+    @include xs {
+      margin: 36px 15px 52px 0px;
+    }
+    @include xxs {
+      margin: 31px 15px 35px 0px;
+    }
+    @include tn {
+      margin: 28px 15px 23px 0px;
+    }
+  }
+  &section4__image2 {
+    background: var(--src) center center / contain no-repeat;
+  }
+  &section4__image2.layout {
+    position: relative;
+    height: 291px;
+    width: 37px;
+    min-width: 37px;
+    @include xxxl {
+      height: 360px;
+      margin: 10px 0px 0px;
+    }
+  }
+  &section4__image2.layout1 {
+    position: relative;
+    height: 291px;
+    margin: 137px 0px 0px;
+    @include xxl {
+      height: 360px;
+      margin: 40px 0px 0px;
+    }
+    @include lg {
+      margin: 111px 0px 0px;
+    }
+    @include md {
+      margin: 82px 0px 0px;
+    }
+    @include sm {
+      margin: 58px 0px 0px;
+    }
+    @include xs {
+      margin: 45px 0px 0px;
+    }
+    @include xxs {
+      margin: 33px 0px 0px;
+    }
+    @include tn {
+      margin: 25px 0px 0px;
+    }
+  }
+  &section4__flex6-spacer {
+    @include lg {
+      flex: 0 1 auto;
+      display: none;
+    }
+    @include md {
+      display: flex;
+    }
+    @include sm {
+      display: none;
+      flex: 0 0 100%;
+    }
+  }
+  &section4__flex6-item1 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 553px;
+    @include sm {
+      flex: 0 0 100%;
+    }
+  }
+  &section4__flex8 {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section4__flex8-item {
+    @include flex-column;
+    position: relative;
+  }
+  &section4__block3 {
+    @include flex-column;
+    background: linear-gradient(
+      90.84deg,
+      #e6e9f0 0%,
+      rgba(238, 241, 245, 0) 107.71%
+    );
+    width: 100%;
+    height: 100%;
+    @include max {
+      border-radius: 18px;
+    }
+  }
+  &section4__big-title {
+    @include font-face($font_type13, rgb(33, 33, 33), 0.1120000034570694px);
+    width: 100%;
+    height: 100%;
+    @include lg {
+      text-align: left;
+    }
+    @include sm {
+      font-size: 21px;
+    }
+  }
+  &section4__flex8-spacer {
+    flex: 0 0 auto;
+  }
+  &section4__flex8-item1 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 258px;
+  }
+  &section4__block12 {
+    @include flex-column;
+    background: linear-gradient(
+      -90.84deg,
+      #e6e9f0 0%,
+      rgba(238, 241, 245, 0) 107.71%
+    );
+    width: 100%;
+    height: 100%;
+    @include max {
+      border-radius: 18px;
+    }
+  }
+  &section4__txt {
+    display: flex;
+    justify-content: flex-end;
+    font: $font_type14;
+    text-align: right;
+    letter-spacing: 0px;
+    width: 100%;
+    height: 100%;
+    @include sm {
+      font-size: 21px;
+      text-align: right;
+    }
+  }
+  &section4__flex8-item2 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 258px;
+  }
+  &section4__block121 {
+    @include flex-column;
+    background: linear-gradient(
+      90.84deg,
+      #e6e9f0 0%,
+      rgba(238, 241, 245, 0) 107.71%
+    );
+    width: 100%;
+    height: 100%;
+    @include max {
+      border-radius: 18px;
+    }
+  }
+  &section4__txt1-box {
+    width: 100%;
+    height: 100%;
+    @include sm;
+  }
+  &section4__txt1 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type14;
+    letter-spacing: 0px;
+    white-space: pre-wrap;
+    @include sm {
+      font-size: 21px;
+    }
+  }
+  &section4__flex6-spacer1 {
+    flex: 0 0 auto;
+    min-width: 10px;
+    @include sm {
+      display: none;
+    }
+  }
+  &section4__flex6-item2 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 37px;
+    @include lg {
+      display: none;
+    }
+    @include md {
+      display: flex;
+    }
+    @include sm {
+      display: none;
+      flex: 0 0 100%;
+    }
+  }
+  &section4__image3 {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    object-fit: contain;
+    object-position: center top;
+  }
+  &section4__image3.layout {
+    position: relative;
+    width: 37px;
+    min-width: 37px;
+    margin: 137px 0px 229px;
+    @include xxxl {
+      margin: 137px 40px 229px 100px;
+      display: flex;
+    }
+    @include xxl {
+      margin: 137px 30px 229px;
+    }
+    @include xl {
+      margin: 137px 10px 229px 20px;
+    }
+    @include lg {
+      display: none;
+    }
+    @include md {
+      margin: 82px 10px 127px 20px;
+    }
+    @include sm {
+      margin: 58px 10px 81px 20px;
+    }
+    @include xs {
+      margin: 45px 10px 59px 20px;
+    }
+    @include xxs {
+      margin: 33px 10px 36px 20px;
+    }
+    @include tn {
+      margin: 25px 10px 21px 20px;
+    }
+  }
+  &section4__flex6-item3 {
+    @include flex-column;
+    position: relative;
+    @include sm {
+      flex: 0 0 100%;
+    }
+  }
+  &section4__flex9 {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section4__flex9-item {
+    @include flex-column;
+    position: relative;
+  }
+  &section4__block122 {
+    @include flex-column;
+    background: linear-gradient(
+      90.84deg,
+      #e6e9f0 0%,
+      rgba(238, 241, 245, 0) 107.71%
+    );
+    width: 100%;
+    height: 100%;
+    @include max {
+      border-radius: 18px;
+    }
+    @include md {
+      padding-right: 5px;
+      padding-left: 15px;
+    }
+  }
+  &section4__txt2-box {
+    width: 100%;
+    height: 100%;
+    @include sm;
+  }
+  &section4__txt2 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type14;
+    letter-spacing: 0px;
+    white-space: pre-wrap;
+    @include sm {
+      font-size: 21px;
+    }
+  }
+  &section4__flex9-spacer {
+    flex: 1 1 auto;
+  }
+  &section4__block123 {
+    @include flex-column;
+    background: linear-gradient(
+      -90.84deg,
+      #e6e9f0 0%,
+      rgba(238, 241, 245, 0) 107.71%
+    );
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    @include max {
+      border-radius: 18px;
+    }
+    @include md {
+      padding-right: 5px;
+      padding-left: 15px;
+    }
+  }
+  &section4__txt3-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    @include xxxl {
+      justify-content: flex-end;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    @include sm {
+      justify-content: flex-end;
+    }
+  }
+  &section4__txt3 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font: $font_type14;
+    text-align: right;
+    letter-spacing: 0px;
+    white-space: pre-wrap;
+    @include xxxl {
+      text-align: right;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    @include sm {
+      font-size: 21px;
+    }
+  }
+  &section4__flex9-spacer1 {
+    flex: 0 0 auto;
+  }
+  &section4__hero-title {
+    @include h-center-content;
+    font: $font_type15;
+    color: rgb(29, 29, 31);
+    text-align: center;
+    letter-spacing: 0px;
+    @include lg {
+      font-size: 32px;
+      text-align: center;
+    }
+    @include md {
+      font-size: 29px;
+    }
+    @include sm {
+      font-size: 30px;
+    }
+    @include xs {
+      font-size: 24px;
+    }
+    @include xxs {
+      font-size: 22px;
+    }
+    @include tn {
+      font-size: 21px;
+    }
+  }
+  &section4__hero-title.layout {
+    position: relative;
+    min-height: 54px;
+    flex-shrink: 0;
+    width: 80.14%;
+    margin: 23px 0% 0px 19.86%;
+    @include lg {
+      margin: 20px 0% 0px 19.86%;
+    }
+    @include md {
+      margin: 17px 0% 0px 19.86%;
+    }
+    @include sm {
+      width: 99.57%;
+      margin: 21px auto 114px;
+    }
+  }
+  &main-item5 {
+    @include flex-column;
+    position: relative;
+  }
+  &section5__section5 {
+    @include flex-column;
+  }
+  &section5__section5.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0px 0px;
+    @include max {
+      width: 99.9%;
+      margin: 0px auto;
+    }
+  }
+  &section5__group {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section5__image5 {
+    background: var(--src) center center / cover no-repeat;
+    @include max {
+      object-position: -10px;
+    }
+  }
+  &section5__image5.layout {
+    position: absolute;
+    top: 0px;
+    bottom: 2263px;
+    left: -245px;
+    width: 1920px;
+    @include max {
+      bottom: 0px;
+    }
+  }
+  &section5__flex10 {
+    @include flex-column;
+    @include sm {
+      oposition: 20px;
+    }
+  }
+  &section5__flex10.layout {
+    position: relative;
+    height: min-content;
+    width: 85.53%;
+    margin: 166px 0% 159px 14.47%;
+    @include max {
+      width: 99.93%;
+      margin: 166px 0.07% 159px 0%;
+    }
+    @include lg {
+      width: 94.64%;
+      margin: 74px 0.07% 46px 5.29%;
+    }
+    @include sm {
+      width: 99.17%;
+      margin: 0px auto 133px;
+    }
+  }
+  &section5__flex10-item {
+    @include flex-column;
+    position: relative;
+  }
+  &section5__flex14 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    @include lg {
+      flex-wrap: wrap;
+      row-gap: 16px;
+    }
+  }
+  &section5__flex14-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 56px;
+    @include lg {
+      flex: 0 0 100%;
+    }
+  }
+  &section5__image1 {
+    background: var(--src) center center / contain no-repeat;
+  }
+  &section5__image1.layout {
+    position: relative;
+    height: 47px;
+    width: 56px;
+    min-width: 56px;
+    margin: 43px 0px 128px;
+    @include max {
+      height: 54px;
+    }
+    @include lg {
+      margin: 0px 0px;
+    }
+    @include sm {
+      width: 67px;
+      min-width: 67px;
+      margin: 0px auto;
+    }
+  }
+  &section5__flex14-spacer {
+    flex: 0 1 23px;
+    @include lg {
+      display: none;
+    }
+  }
+  &section5__flex14-item1 {
+    @include flex-column;
+    position: relative;
+    flex: 1 1 543px;
+    @include lg {
+      flex: 0 0 100%;
+    }
+  }
+  &section5__big-title-box {
+    display: flex;
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+    @include tn {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &section5__big-title-box.layout {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    max-width: 543px;
+    margin: 0px 0px;
+    @include lg {
+      max-width: 641px;
+    }
+    @include sm {
+      width: 99.63%;
+      max-width: 370px;
+      margin: 0px auto;
+    }
+  }
+  &section5__big-title {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    @include font-face($font_type5, rgb(33, 33, 33), 0.1120000034570694px);
+    white-space: pre-wrap;
+    @include sm {
+      text-align: center;
+    }
+  }
+  &section5__flex10-spacer {
+    flex: 0 0 auto;
+    min-height: 251px;
+    @include sm {
+      display: none;
+    }
+  }
+  &section5__flex15 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    @include lg {
+      flex-wrap: wrap;
+      row-gap: 16px;
+    }
+  }
+  &section5__flex15-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 69px;
+    @include lg {
+      flex: 0 0 100%;
+    }
+  }
+  &section5__image {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    object-fit: contain;
+    object-position: center top;
+  }
+  &section5__image.layout {
+    position: relative;
+    width: 69px;
+    min-width: 69px;
+    margin: 43px 0px 151px;
+    @include max {
+      width: 75px;
+      min-width: 75px;
+    }
+    @include lg {
+      margin: 0px 0px;
+    }
+    @include sm {
+      margin: 113px auto 0px;
+    }
+  }
+  &section5__flex15-spacer {
+    flex: 0 1 18px;
+    @include lg {
+      display: none;
+    }
+  }
+  &section5__flex15-item1 {
+    @include flex-column;
+    position: relative;
+    flex: 1 1 auto;
+    @include lg {
+      flex: 0 0 100%;
+    }
+  }
+  &section5__flex16 {
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+  }
+  &section5__big-title1-box {
+    display: flex;
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &section5__big-title1-box.layout {
+    position: relative;
+    height: min-content;
+  }
+  &section5__big-title1 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    @include font-face($font_type16, rgb(33, 33, 33), 0.1120000034570694px);
+    white-space: pre-wrap;
+    @include sm {
+      text-align: center;
+    }
+  }
+  &section5__flex16-item {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 73px;
+  }
+  &section5__big-title2-box {
+    display: flex;
+    @include sm {
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &section5__big-title2-box.layout {
+    position: relative;
+    height: min-content;
+    @include max {
+      margin: 22px 0px 0px;
+    }
+  }
+  &section5__big-title2 {
+    overflow: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    @include font-face($font_type16, rgb(33, 33, 33), 0.1120000034570694px);
+    white-space: pre-wrap;
+    @include sm {
+      text-align: center;
+    }
+  }
+  &section5__flex16-item1 {
+    @include flex-column;
+    position: relative;
+    flex: 0 1 110px;
+  }
+  &section5__big-title3 {
+    display: flex;
+    @include font-face($font_type16, rgb(33, 33, 33), 0.1120000034570694px);
+    @include sm {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &section5__big-title3.layout {
+    position: relative;
+    height: min-content;
+    margin: 0px 8px 0px 0px;
+    @include max {
+      margin: 22px 8px 0px 0px;
+    }
+  }
+}
