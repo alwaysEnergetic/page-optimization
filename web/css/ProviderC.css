@@ -30,13 +30,11 @@
   background: var(--src) center center/contain no-repeat; }
 
 .provider-c-icon.layout {
-  position: absolute;
-  left: 25px;
-  top: 0px;
+  position: relative;
   height: 44px;
   width: 44px;
   min-width: 44px;
-  margin: 0px 0px 0px 50px; }
+  margin: 0px 0px 0px 166px; }
   @media (max-width: 1199px) {
     .provider-c-icon.layout {
       margin: 0px 0px 0px 132px; } }

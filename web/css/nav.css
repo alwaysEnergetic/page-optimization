@@ -24,7 +24,7 @@ header {
 }
 .toggle {
   cursor: pointer;
-  padding: 25px 20px;
+  padding: 19px 20px;
   position: relative;
 }
 nav {
@@ -71,28 +71,72 @@ nav a:hover, a.active,  nav label:hover {
 section:nth-of-type(1) {
   padding-top: 6rem;
 }
+
+.table-nav {
+    width: 334px;
+    height: 488px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 27px 16px 32px 15px;
+    position: fixed;
+    left: 245px;
+    top: 44px;
+    z-index: 99999; 
+  }
+  #intro {
+    margin-left: 2px;
+  }
+
+  .layout-new {
+      width: 44px;
+      height: 44px;
+  }
+  .provider-c-icon.layout-new {
+    position: relative;
+    height: 44px;
+    width: 44px;
+    min-width: 44px;
+    margin: 0px 0px 0px 124px !important; }
+
 /*------- mobile nav --------*/
-@media (max-width: 767px) {
+@media (max-width: 1919px) {
   nav ul {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
   }
+
+  header {
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .layout-new {
+      margin-left: 166px;
+      margin-right: 18px;
+  }
+  
   #mobile-icon:checked ~ nav > ul {
-    max-height: 100vh;
+
   }
   .nav-items ul {
     padding-left: 1rem;
   }
   [id^="submenu"]:checked ~ [class^="submenu"] {
-    max-height: 100vh;
-    overflow: visible;
+
   }
 
   .hamburger-icon {
-    width: 18px;
-    height: 3px;
-    background-color: black;
+    width: 35px;
+    height: 5px;
+    background-color: white;
     display: block;
     position: relative;
   }
@@ -103,14 +147,14 @@ section:nth-of-type(1) {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: white;
     transition: all 0.2s;
   }
   .hamburger-icon:before {
-    top: 5px;
+    top: 10px;
   }
   .hamburger-icon:after {
-    top: -5px;
+    top: -10px;
   }
   #mobile-icon:checked ~ .toggle {
     border-radius: 50em;
@@ -134,7 +178,7 @@ section:nth-of-type(1) {
   }
 }
 /*-------desktop nav --------*/
-@media (min-width: 768px) {
+@media (min-width: 1919px) {
   header {
     flex-wrap: nowrap;
   }
@@ -217,8 +261,9 @@ section:nth-of-type(1) {
   .topnav .icon {
     display: none;
   }
-  
-  @media screen and (max-width: 600px) {
+
+
+  /* @media screen and (max-width: 1919px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -226,7 +271,7 @@ section:nth-of-type(1) {
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1919px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
@@ -238,5 +283,5 @@ section:nth-of-type(1) {
       display: block;
       text-align: left;
     }
-  }
+  } */
 }
