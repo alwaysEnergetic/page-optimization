@@ -41,7 +41,7 @@
 
   <body style="display: flex; flex-direction: column">
     <main class="provider-c provider-c-main layout">
-      <div class="provider-c-main-item" style="align-items: center">
+      <div class="provider-c-main-item" id="nav1" style="align-items: center">
         <header style="max-width: 1920px">
           <img
             class="provider-c-icon layout"
@@ -53,48 +53,67 @@
             ><span class="hamburger-icon"></span
           ></label>
           <nav>
-            <ul class="nav-items">
+            <ul class="nav-items" id="test">
               <li>
-                <a href="#">Introduction</a>
+                <a href="#" class="btn btn-hidden active">Introduction</a>
               </li>
-              <li>
-                <a class="hide-mobile" href="#"
+              <li id="mydiv">
+                <a class="hide-mobile btn" href="#"
                   >Products<span class="arrow">&#x25bc;</span></a
                 >
                 <label for="submenu">
                   Products<span class="arrow">&#x25bc;</span></label
                 >
                 <input id="submenu" type="checkbox" />
-                
-                <ul class="submenu-1">
-                  <li><a href="#">Communication + outsource staff</a></li>
-                  <li><a href="#">Advanced appointments</a></li>
-                  <li><a href="#">Innovative billing</a></li>
-                  <li><a href="#">Patient out of pocket expenses</a></li>
-                  <li><a href="#">Outsourced services</a></li>
-                </ul>
-              </li>
-              <li><a href="#"> Introductory promotion </a></li>
-              <li>
-                <a href="#"> Deployment and roll out schedule </a>
+                <div class="submenu-1">
+                  <ul>
+                    <li><a href="#">Communication + outsource staff</a></li>
+                    <li><a href="#">Advanced appointments</a></li>
+                    <li><a href="#">Innovative billing</a></li>
+                    <li><a href="#">Patient out of pocket expenses</a></li>
+                    <li><a href="#">Outsourced services</a></li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"> Pricing </a>
+                <a href="#" class="btn btn-hidden"> Introductory promotion </a>
               </li>
               <li>
-                <a href="#">Webinars and FAQs</a>
+                <a href="#" class="btn btn-hidden">
+                  Deployment and roll out schedule
+                </a>
               </li>
               <li>
-                <a href="#">Partner with us</a>
+                <a href="#" class="btn btn-hidden"> Pricing </a>
               </li>
-
-              <li><a href="#">Practice managers</a></li>
-              <li><a href="#">Search for providers</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Patient website </a></li>
+              <li>
+                <a href="#" class="btn btn-hidden">Webinars and FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-hidden">Partner with us</a>
+              </li>
+              <li><a href="#" class="btn btn-hidden">Practice managers</a></li>
+              <li>
+                <a href="#" class="btn btn-hidden">Search for providers</a>
+              </li>
+              <li><a href="#" class="btn btn-hidden">Contact</a></li>
+              <li><a href="#" class="btn btn-hidden">Patient website </a></li>
             </ul>
           </nav>
         </header>
+      </div>
+      <div class="provider-c-main-item" id="target" style="display: none">
+        <div class="topnav">
+          <div>
+            <a href="#home" class="active2 btn2"
+              >Communication + outsource staff</a
+            >
+            <a href="#news" class="btn2">Advanced appointments</a>
+            <a href="#contact" class="btn2">Innovative billing</a>
+            <a href="#about" class="btn2">Patient out of pocket expenses</a>
+            <a href="#about" class="btn2">Outsourced services</a>
+          </div>
+        </div>
       </div>
       <div class="provider-c-main-item1">
         <px-posize
@@ -1315,6 +1334,44 @@ Click the Install icon on our website to install on their device Home screen. Us
     </main>
     <script type="text/javascript">
       AOS.init();
+      const targetDiv = document.getElementById("target");
+      const btn = document.getElementById("mydiv");
+      btn.onclick = function () {
+        if (targetDiv.style.display === "none") {
+          targetDiv.style.display = "block";
+        } else {
+          targetDiv.style.display = "none";
+        }
+      };
+      const btnHidden = document.getElementsByClassName("btn-hidden");
+      for (var i = 0; i < btnHidden.length; i++) {
+        btnHidden[i].addEventListener("click", function () {
+          if (targetDiv.style.display === "block") {
+            targetDiv.style.display = "none";
+          }
+        });
+      }
+
+      var header = document.getElementById("test");
+      var btns = header.getElementsByClassName("btn");
+
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      var header2 = document.getElementById("target");
+      var btns2 = header2.getElementsByClassName("btn2");
+
+      for (var i = 0; i < btns2.length; i++) {
+        btns2[i].addEventListener("click", function () {
+          var current2 = document.getElementsByClassName("active2");
+          current2[0].className = current2[0].className.replace("active2", "");
+          this.className += " active2";
+        });
+      }
     </script>
   </body>
 </html>
